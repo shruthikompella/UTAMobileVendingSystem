@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHome">
+
+
+    <Button
+        android:id="@+id/userLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#d34836"
+        android:onClick="onLogout"
+        android:text="Logout"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#008577"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <Button
+        android:id="@+id/viewUserProfile"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="#008577"
+        android:onClick="onViewProfile"
+        android:text="VIEW PROFILE"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayName"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <Button
+        android:id="@+id/searchVehicleUser"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="#008577"
+        android:onClick="onSearchVehicle"
+        android:text="SEARCH VEHICLE"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewUserProfile"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <Button
+        android:id="@+id/viewMyPastOrdersUser"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="#008577"
+        android:onClick="onMyPastOrderClick"
+        android:text="VIEW MY PAST ORDERS"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchVehicleUser"
+        app:layout_constraintVertical_bias="0.045" />
+</androidx.constraintlayout.widget.ConstraintLayout>
