@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vendingmachineapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="UTA Mobile Vending System"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewMyPastOrders" />
+        <activity android:name=".ViewPastOrders" />
+        <activity android:name=".ViewSpecificOrder" />
+        <activity android:name=".OperatorHome"></activity>
+        <activity android:name=".AssignOperator"></activity>
+        <activity android:name=".ViewSpecificVehicle"></activity>
+        <activity android:name=".UserHome"></activity>
+        <activity android:name=".SearchVehicle"></activity>
+        <activity android:name=".ViewSpecificInventory" />
+        <activity android:name=".ViewInventory" />
+        <activity android:name=".ViewMyInventory" />
+        <activity android:name=".Login" />
+        <activity android:name=".SearchOperator" />
+        <activity android:name=".ViewCart"></activity>
+        <activity android:name=".ManagerHome"></activity>
+        <activity android:name=".ViewProfile"></activity>
+        <activity android:name=".BuyItems"></activity>
+        <activity android:name=".EditProfile"></activity>
+        <activity android:name=".ShowRevenue"></activity>
+        <activity android:name=".AssignLocation"></activity>
+        <activity android:name=".ViewOperatorSchedule"></activity>
+        <activity android:name=".Register"></activity>
+        <activity android:name=".ViewOperatorDetails"></activity>
+        <activity android:name=".ShowAvailableVehicle"></activity>
+        <activity android:name=".CheckoutItems"></activity>
+
+
+
+
+       <!-- <activity android:name=".Login"></activity>
+        <activity android:name=".Welcome"></activity>-->
+    </application>
+
+</manifest>
