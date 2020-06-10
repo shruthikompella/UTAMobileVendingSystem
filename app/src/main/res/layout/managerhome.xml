@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerHome">
+
+
+    <Button
+        android:id="@+id/viewInventoryManager"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="#008577"
+        android:onClick="onViewInventory"
+        android:text="VIEW INVENTORY"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchOperatorManager"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#008577"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <Button
+        android:id="@+id/managerLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#d34836"
+        android:onClick="onLogout"
+        android:text="Logout"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/displayName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/viewManagerProfile"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="#008577"
+        android:onClick="onViewProfile"
+        android:text="VIEW PROFILE"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayName"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <Button
+        android:id="@+id/searchVehicleManager"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="#008577"
+        android:onClick="onSearchVehicle"
+        android:text="SEARCH VEHICLE"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewManagerProfile"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <Button
+        android:id="@+id/showAvailableVehicleManager"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="#008577"
+        android:onClick="onShowAvailableVehicleClick"
+        android:text="Show Available Vehicle"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchVehicleManager"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <Button
+        android:id="@+id/button5howRevenueManager"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="#008577"
+        android:onClick="onShowRevenueClick"
+        android:text="SHOW REVENUE"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showAvailableVehicleManager"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <Button
+        android:id="@+id/searchOperatorManager"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="#008577"
+        android:onClick="onSerachOperator"
+        android:text="SEARCH OPERATOR"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5howRevenueManager"
+        app:layout_constraintVertical_bias="0.111" />
+</androidx.constraintlayout.widget.ConstraintLayout>
