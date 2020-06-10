@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewMyInventory">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewMyInventory"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10sp"
+
+        android:gravity="right">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#009688"
+            android:onClick="onHome"
+
+            android:text="HOME"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+
+            android:background="#d34836"
+
+            android:onClick="onLogout"
+            android:text="LOGOUT"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="20sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="View My Inventory"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20sp"
+    >
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:gravity="center"
+
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vmiName"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20sp"
+    >
+    <TextView
+        android:id="@+id/textView18"
+        android:gravity="center"
+
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="Food Vending Type"
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/vmiFVT"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20sp"
+    >
+    <TextView
+        android:id="@+id/textView19"
+        android:gravity="center"
+
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="Drinks Remaining"
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/vmiDrinksRem"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp"
+        >
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="200sp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Snacks Remaining"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vmiSnacksRem"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp"
+        >
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="200sp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sandwiches Remaining"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vmiSandwichesRem"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20sp"
+    >
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="200sp"
+        android:gravity="center"
+
+        android:layout_height="wrap_content"
+        android:text="End Time"
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/vmiEndTime"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp"
+        >
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="200sp"
+        android:gravity="center"
+
+        android:layout_height="wrap_content"
+        android:text="Current Location"
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/vmiCurrentLoc"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp"
+        >
+    <TextView
+        android:id="@+id/textView24"
+        android:gravity="center"
+
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="Revenue"
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/vmiRevenue"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp"
+        >
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="Next Location"
+        android:gravity="center"
+
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/vmiNextLoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:background="#d34836"
+            android:onClick="onBack"
+            android:text="Back"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
