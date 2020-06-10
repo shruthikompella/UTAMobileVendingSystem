@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewOperatorDetails">
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#d34836"
+        android:onClick="onLogout"
+        android:text="Logout"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#008577"
+        android:onClick="onHome"
+        android:text="Home"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Logout"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/editProfileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Operator Details"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="414dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileText"
+        app:layout_constraintVertical_bias="0.079">
+
+        <TextView
+            android:id="@+id/userNameLabel"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Username"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewUserName"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="john123"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/firstNameLabel"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="First Name"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewFirstName"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="John"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.75">
+
+        <TextView
+            android:id="@+id/lastNameLabel"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Last Name"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewLastName"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Smith"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Phone"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewPhone"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="8565562565"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewEmail"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="john@gmail.com"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/streetLabel"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Street Address"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewStreet"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="400 S Cooper St"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/cityLabel"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="City"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewCity"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Arlington"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/stateLabel"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="State"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewState"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Texas"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/zipLabel"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Zip Code"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewZip"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="76013"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/vodBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d34836"
+        android:onClick="onBack"
+        android:text="Back"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
