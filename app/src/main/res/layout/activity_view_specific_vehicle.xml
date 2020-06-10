@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ViewSpecificVehicle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10sp"
+
+        android:gravity="right">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#009688"
+            android:onClick="onHome"
+
+            android:text="HOME"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+
+            android:background="#d34836"
+
+            android:onClick="onLogout"
+            android:text="LOGOUT"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="20sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="View Specific Vehicle"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8sp"
+    android:layout_marginBottom="8sp"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Food Vending Type"
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <TextView
+        android:id="@+id/vsvType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Food Truck"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:orientation="horizontal"
+    android:layout_marginTop="8sp"
+    android:layout_marginBottom="8sp">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <TextView
+        android:id="@+id/vsvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="T1"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <TextView
+            android:id="@+id/vsvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="3/30/2020"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8sp"
+    android:layout_marginBottom="8sp"
+    >
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Start Time"
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vsvStime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="10:00 AM"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="End Time"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="356dp" />
+
+        <TextView
+            android:id="@+id/vsvEtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="2:00 PM"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Location ID"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="427dp" />
+
+        <TextView
+            android:id="@+id/vsvLid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Location 6"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8sp"
+    android:layout_marginBottom="8sp">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Location Intersection"
+        android:textColor="#009688"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="491dp" />
+
+    <TextView
+        android:id="@+id/vsvLinter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Spaniolo and W 1st"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="8sp"
+    android:layout_marginBottom="8sp">
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10sp"
+        android:background="#d34836"
+        android:onClick="onBack"
+        android:text="Back"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/BtnSpecificInven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:onClick="onViewSpecificVehicle"
+        android:text="View Specific Inventory"
+        android:textColor="#ffffff" />
+</LinearLayout>
+</LinearLayout>
