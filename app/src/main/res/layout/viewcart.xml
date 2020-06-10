@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCart">
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#d34836"
+        android:onClick="onLogout"
+        android:text="Logout"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#008577"
+        android:onClick="onHome"
+        android:text="Home"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Logout"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/viewProfileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Cart"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home"
+        app:layout_constraintVertical_bias="0.046" />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="414dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewProfileText"
+        app:layout_constraintVertical_bias="0.079">
+
+        <TextView
+            android:id="@+id/noDrinks"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Drinks"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewDrinks"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text=""
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/noSandwiches"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Sandwiches"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewSandwiches"
+            android:layout_width="261dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.75">
+
+        <TextView
+            android:id="@+id/noSnacks"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Snacks"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewSnacks"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text=""
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/subTotal"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Subtotal"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewSubTotal"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text=""
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tax"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Tax(8.25%)"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewTax"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text=""
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="415dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:text="Total"
+            android:textAlignment="center"
+            android:textColor="#009688"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewTotal"
+            android:layout_width="261dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text=""
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/vcBackBtn"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:background="#008577"
+        android:onClick="onCheckOutClick"
+        android:text="Checkout Items"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d34836"
+        android:onClick="onBack"
+        android:text="Back"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
