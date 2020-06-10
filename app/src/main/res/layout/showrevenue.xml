@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowRevenue">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+
+
+       <Button
+           android:id="@+id/Logout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="16dp"
+           android:background="#d34836"
+           android:onClick="onLogout"
+           android:text="Logout"
+           android:textColor="#ffffff"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.95"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.0" />
+
+       <Button
+           android:id="@+id/home"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="16dp"
+           android:background="#008577"
+           android:onClick="onHome"
+           android:text="Home"
+           android:textColor="#ffffff"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toStartOf="@+id/Logout"
+           app:layout_constraintHorizontal_bias="0.9"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/editProfileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Revenue"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <EditText
+        android:id="@+id/selectDateEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:hint="Select Date"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/showRevenueBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editProfileText"
+        app:layout_constraintVertical_bias="0.147" />
+
+       <Button
+           android:id="@+id/srBackBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="32dp"
+           android:layout_marginRight="32dp"
+           android:background="#d34836"
+           android:onClick="onBack"
+           android:text="Back"
+           android:textColor="#ffffff"
+           app:layout_constraintBottom_toTopOf="@+id/headingLayout"
+           app:layout_constraintEnd_toStartOf="@+id/showRevenueBtn"
+           app:layout_constraintHorizontal_bias="0.367"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/selectDateEdit"
+           app:layout_constraintVertical_bias="0.0" />
+
+       <Button
+           android:id="@+id/showRevenueBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:background="#008577"
+           android:text="SHOW"
+           android:textColor="#ffffff"
+           app:layout_constraintBottom_toTopOf="@id/headingLayout"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.851"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/selectDateEdit"
+           app:layout_constraintVertical_bias="0.112" />
+
+       <LinearLayout
+        android:id="@+id/headingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/revenueList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showRevenueBtn">
+
+           <TextView
+               android:id="@+id/uNameLabel"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="Vehicle Name"
+               android:textSize="16sp"
+               android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Revenue"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+       <ListView
+           android:id="@+id/revenueList"
+           android:layout_width="411dp"
+           android:layout_height="500dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/headingLayout" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
